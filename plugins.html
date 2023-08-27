@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins | Vite</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <style>
+        *{
+            font-family: "Inter var", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            
+        }
+        .round{
+            border-radius: 10px;
+        }
+        .button{
+            border-radius: 20px;
+            background-color: #f6f6f7;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid rgba(60, 60, 70, .29);
+        }
+        .button:hover{
+            border-radius: 20px;
+            background-color: #e5e5f0;
+            text-decoration: none;
+            color: #000;
+        }
+        .d-inline-block img{
+            height: 30px;
+        }
+        .bg{
+             background-color: #f6f6f7;
+        }
+        .text{
+            color: #3c3c3c;
+            transition: 1s;
+        }
+        .side{
+            height: 600px;
+            overflow-y: scroll;
+            position: sticky;
+            top: 0;
+        }
+        .text-green{
+            color: #C3E88D;
+        }
+    </style>
+</head>
+<body>
+        <div class="container-fluid px-0 mx-0">
+                   <header class="border-bottom p-3 row mx-0 " style="justify-content: space-between; position: sticky; top: 0; z-index: 1; background-color: #fff;">
+                <div class="nav">  
+                    <a href="index.html" class="nav-link text-dark font-weight-300">
+                    <img src="images/logo.svg" alt="" style="width: 25px;">
+                  Vite</a>
+                  <span class="px-3 py-2 round" style="background-color: #f6f6f7; vertical-align: middle; cursor: pointer;">Search 
+                    <span class="border rounded p-1 ml-1">Ctrl K</span></span>
+                </div>
+                <div class="nav">
+                    <a href="guide.html" class="nav-link text-dark">Guide</a>
+                    <a href="plugins.html" class="nav-link text-dark">Config</a>
+                    <a href="plugins.html" class="nav-link  font-weight-bold text-primary">Plugins</a>
+                    <a href="" class="nav-link text-dark">Resources</a>
+                    <a href="" class="nav-link text-dark">Version</a>
+                    <img src="images/snippet.PNG" alt="" style="cursor: pointer;" class=" col-md-5 ">
+                </div>
+            </header>
+            <!-- Left side -->
+           
+            <!-- Side 2 -->
+        <div class="col-md-9 mx-auto">
+           
+             <div class="row mx-0 ">
+                    <div class="col-md-9">
+                        <!-- <h1 style="font-size: 28px;" class="border-bottom pb-5 mt-3">Getting Started</h1> -->
+
+                        <h1 style="font-size: 24px;" class="mb-3 mt-3">Plugins</h1>
+                        <div class="border round border-primary text-primary p-3 bg">
+               <p class="font-weight-bold"> Note</p>
+                Vite aims to provide out-of-the-box support for common web development patterns. Before searching for a Vite or Compatible Rollup plugin, check out the <b style="cursor: pointer;"><u>Features Guide</u></b> . A lot of the cases where a plugin would be needed in a Rollup project are already covered in Vite.
+            </div>
+            <p class="pb-5 border-bottom mt-3">Check out Using Plugins for information on how to use plugins.</p>
+
+
+            <h2 class="my-3">Official Plugins</h2>
+
+            <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-vue</a>
+            <li class="ml-3 mt-3">Provides Vue 3 Single File Components support.</li>
+
+
+
+
+
+
+
+
+
+
+            <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-vue</a>
+            <li class="ml-3 mt-3">Provides Vue 3 Single File Components support.</li>
+
+
+            <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-vue-jsx</a>
+            <li class="ml-3 mt-3">Provides Vue 3 JSX support (via dedicated Babel transform).</li>
+
+
+            <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-vue2</a>
+            <li class="ml-3 mt-3">Provides Vue 2 Single File Components support.</li>
+
+             <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-react</a>
+
+            <li class="ml-3 mt-3">Uses esbuild and Babel, achieving fast HMR with a small package footprint and the flexibility of being able to use the Babel transform pipeline. Without additional Babel plugins, only esbuild is used during builds.</li>
+
+             <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-react-swc</a>
+            <li class="ml-3 mt-3">Replaces Babel with SWC during development. During builds, SWC+esbuild are used when using plugins, and esbuild only otherwise. For big projects that don't require non-standard React extensions, cold start and Hot Module Replacement (HMR) can be significantly faster.</li>
+
+             <a href="" style="font-size: 24px;" class="mt-4 d-block">@vitejs/plugin-legacy</a>
+            <li class="ml-3 mt-5">Provides legacy browsers support for the production build.</li>
+            <br>
+            <hr>
+            <br>
+
+            <h2 class="mb-3">Community Plugins</h2>
+            <p>Check out <a href="" class="font-weight-bold"> awesome-vite</a> - you can also submit a PR to list your plugins there.</p>
+
+            <br>
+            <hr>
+            <br>
+
+            <h2 class="mb-3">Rollup Plugins</h2>
+            <p>Vite plugins are an extension of Rollup's plugin interface. Check out the Rollup Plugin Compatibility section for more information.</p>
+            
+            <br>
+            <br>
+            <br>
+            <a href="">Suggest changes to this page</a>
+
+    </div>         
+    
+                    <!-- Right Side -->
+                    <div class="py-0 col-md-3">
+                    <div class="" style="top: 76px; position: sticky;">
+                        <div class="border-left  px-4">
+                        <p class="font-weight-bold mb-1" style="line-height: 28px; font-size: 12px;">On this Page</p>
+
+                  <a href="#" class="text  text-decoration-none d-block">Official Plugins</a>
+                  <a href="#" class="text  text-decoration-none d-block">Community Plugins</a>
+                  <a href="#" class="text  text-decoration-none d-block">Rollup Plugins</a>
+                </div>
+                <img src="images/side.PNG" alt="" class="w-100 px-2">
+            </div>
+                    </div>
+                </div>
+        </div>
+     <footer class="border-top p-5 mt-5 text-center" style="color: rgba(60, 60, 70, .7);">
+        <p class="mb-0">Released under the MIT License. (d8cb765a)</p>
+
+<p class="my-1">Copyright © 2019-present Evan You & Vite Contributors</p>
+    </footer>
+</div>
+</body>
+</html>

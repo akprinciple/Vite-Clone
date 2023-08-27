@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite | Next Generation Frontend Tooling</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <style>
+        *{
+            font-family: "Inter var", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            
+        }
+        .round{
+            border-radius: 10px;
+        }
+        .button{
+            border-radius: 20px;
+            background-color: #f6f6f7;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid rgba(60, 60, 70, .29);
+        }
+        .button:hover{
+            border-radius: 20px;
+            background-color: #e5e5f0;
+            text-decoration: none;
+            color: #000;
+        }
+        .d-inline-block img{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container-fluid px-0">
+            <header class="border-bottom p-3 row mx-0 " style="justify-content: space-between; position: sticky; top: 0; z-index: 1; background-color: #fff;">
+                <div class="nav">  
+                    <a href="" class="nav-link text-dark font-weight-300">
+                    <img src="images/logo.svg" alt="" style="width: 25px;">
+                  Vite</a>
+                  <span class="px-3 py-2 round" style="background-color: #f6f6f7; vertical-align: middle; cursor: pointer;">Search 
+                    <span class="border rounded p-1 ml-1">Ctrl K</span></span>
+                </div>
+                <div class="nav">
+                    <a href="guide.html" class="nav-link text-dark">Guide</a>
+                    <a href="plugins.html" class="nav-link text-dark">Config</a>
+                    <a href="plugins.html" class="nav-link text-dark">Plugins</a>
+                    <a href="" class="nav-link text-dark">Resources</a>
+                    <a href="" class="nav-link text-dark">Version</a>
+                    <img src="images/snippet.PNG" alt="" style="cursor: pointer;" class=" col-md-5 ">
+                </div>
+            </header>
+            <!-- Banner -->
+            <div class="row mx-0">
+                <div class="col-md-6 pl-5 pt-5">
+                 <h1 style="color: #bd34fe; font-size: 56px;"> Vite</h1>
+                  <h1 class="font-weight-bold" style="font-size: 56px">  Next Generation Frontend Tooling</h1>
+                   <span style="font-size: 24px; color: #3c3c43b3; "> Get ready for a development environment that can finally catch up with you.</span>
+                    <br>
+                    <div class="mt-3">
+                    <a href="" class="btn btn-primary " style="border-radius: 20px;">Get Started</a>
+                    <a href="" class="button px-3 py-2 text-dark ml-2">Why Vite ?</a>
+                    <a href="" class="button px-3 py-2 text-dark ml-2">View on Github?</a>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <center>
+                    <img src="images/logo-with-shadow.png" alt="" class="" style="width: 320px; height: 320px;">
+                </center>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-md-11 mx-auto mt-4 row" style="justify-content: space-between;">
+                <div class="col-md-4 p-2">
+                    <div class="round p-4" style="background-color: #f6f6f7;">
+                    <span style="background-color: #e3e3e5;" class="p-1 d-inline-block">
+                        <img src="images/bulb.PNG" alt="" class="w-100">
+                    </span>
+                    <p style="font-size: 16px; " class="mt-2 font-weight-bold">Instant Server Start</p>
+                       <p style="color: #3c3c43b3;"> On demand file serving over native ESM, no bundling required!</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-2">
+                <div class="round p-4" style="background-color: #f6f6f7;">
+                <span style="background-color: #e3e3e5;" class="p-1 d-inline-block">
+                    <img src="images/lightening.PNG" alt="" class="w-100">
+                </span>
+                <p style="font-size: 16px; " class="mt-2 font-weight-bold">Lightning Fast HMR</p>
+                   <p style="color: #3c3c43b3;">Hot Module Replacement (HMR) that stays fast regardless of app size.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="round p-4" style="background-color: #f6f6f7;">
+            <span style="background-color: #e3e3e5;" class="p-1 d-inline-block">
+                <img src="images/bulb.PNG" alt="" class="w-100">
+            </span>
+            <p style="font-size: 16px; " class="mt-2 font-weight-bold">Rich Features</p>
+               <p style="color: #3c3c43b3;">Out-of-the-box support for TypeScript, JSX, CSS and more.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 p-2">
+        <div class="round p-4" style="background-color: #f6f6f7;">
+        <span style="background-color: #e3e3e5;" class="p-1 d-inline-block">
+            <img src="images/package.PNG" alt="" class="w-100">
+        </span>
+        <p style="font-size: 16px; " class="mt-2 font-weight-bold"> Optimized Build</p>
+           <p style="color: #3c3c43b3;">Pre-configured Rollup build with multi-page and library mode support.</p>
+    </div>
+</div>
+
+<div class="col-md-4 p-2">
+    <div class="round p-4" style="background-color: #f6f6f7;">
+    <span style="background-color: #e3e3e5;" class="p-1 d-inline-block">
+        <img src="images/plug.PNG" alt="" class="w-100">
+    </span>
+    <p style="font-size: 16px; " class="mt-2 font-weight-bold">Universal Plugins</p>
+       <p style="color: #3c3c43b3;">
+        Rollup-superset plugin interface shared between dev and build.</p>
+</div>
+</div>
+
+<div class="col-md-4 p-2">
+    <div class="round p-4" style="background-color: #f6f6f7;">
+    <span style="background-color: #e3e3e5;" class="p-1 d-inline-block">
+        <img src="images/key.PNG" alt="" class="w-100">
+    </span>
+    <p style="font-size: 16px; " class="mt-2 font-weight-bold">Fully Typed APIs</p>
+       <p style="color: #3c3c43b3;">Flexible programmatic APIs with full TypeScript typing.</p>
+</div>
+</div>
+        <div>
+
+     </div>
+    </div>
+    <footer class="border-top p-5 mt-5 text-center" style="color: rgba(60, 60, 70, .7);">
+        <p class="mb-0">Released under the MIT License. (d8cb765a)</p>
+
+<p class="my-1">Copyright © 2019-present Evan You & Vite Contributors</p>
+    </footer>
+</div>
+</body>
+</html>
